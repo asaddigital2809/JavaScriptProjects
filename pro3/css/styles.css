@@ -18,7 +18,7 @@ h1{
 }
 .screen{
         cursor: pointer;
-        width: 70%;
+        width: 60%;
         background-color: black !important;
 }
 .controls{
@@ -27,7 +27,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 60%;
     padding: 15px;
 }
 @media(max-width: 800px){
@@ -49,8 +49,8 @@ h1{
 .fa-stop{
     color: red;
 }
-.fa-stop{
-    color: orangered;
+.fa-pause{
+    color: greenyellow;
 }
 span.timestamp{
     color: white;
