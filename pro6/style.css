@@ -12,6 +12,10 @@ body{
     font-family: 'Lato', sans-serif;
     margin: 0px;
 }
+body.show-nav{
+    transform: translateX(200px);
+    transition: transform 0.5s ease;
+}
 nav{
     background-color: var(--primary-color);
     color: white;
@@ -51,7 +55,7 @@ nav ul li a:hover{
     text-decoration: underline;
 }
 header{
-    background-color: var(--primary-color);
+    background-color: black;
     color: whitesmoke;
     font-size: 25px;
     position: relative;
@@ -83,7 +87,7 @@ button:focus{
 }
 .apply{
     padding: 12px 30px;
-    font-size: 30px;
+    font-size: 20px;
 }
 .container{
     padding: 15px;
@@ -100,6 +104,9 @@ button:focus{
     left: 0;
     bottom: 0;
 }
+.modal-container.show-modal{
+    display: block;
+}
 .modal{
     background-color: whitesmoke;
     border-radius: 5px;
@@ -110,6 +117,8 @@ button:focus{
     transform: translate(-50%,-50%);
     max-width: 100%;
     width: 400px;
+    animation: modalopen;
+    animation-duration: var(--modal-duration);
 }
 .modal-header{
     background-color: black;
@@ -140,4 +149,12 @@ button:focus{
     top: 0;
     right: 0;
     color: var(--primary-color);
+}
+@keyframes modalopen{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
