@@ -43,7 +43,7 @@ h1{
     transform: translateX(-50%);
 }
 .letter{
-    border-bottom: 3px skyblue;
+    border-bottom: solid 3px blue;
     display: inline-flex;
     font-size: 36px;
     align-items: center;
@@ -59,7 +59,6 @@ h1{
     bottom: 0;
     left: 0;
     right: 0;
-    display: flex;
     align-items: center;
     justify-content: center;
     display: none;
